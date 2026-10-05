@@ -1,4 +1,6 @@
+import scala.annotation.tailrec
 object Ejercicio8{
+    @tailrec
     def contarCambiosParidad(n: Int, acc: Int = 0): Int = {
         if n < 100 then {
             if n%2 == (n/10)%2 then acc

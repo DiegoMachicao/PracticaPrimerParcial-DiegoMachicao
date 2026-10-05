@@ -1,4 +1,6 @@
+import scala.annotation.tailrec
 object Ejercicio10{
+    @tailrec
     def rachaMaxima(pal: String, acc: Int = 0, cont: Int = 0): Int = {
         if pal == "" then 0
         else if pal.length <= 1 then {
